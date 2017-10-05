@@ -1,0 +1,51 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Django Channels Example{% endblock %}</title>
+
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600,200">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="/static/bower_components/bootstrap-material-design/dist/css/ripples.css">
+    <link rel="stylesheet" href="/static/bower_components/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css">
+
+    <link rel="stylesheet" href="{% static 'chat.css' %}">
+</head>
+
+<body>
+    {% include "navbar.html" %}
+
+    <div class="container my-container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    <script type="text/javascript" src='{% static "bower_components/jquery/dist/jquery.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/bootstrap/dist/js/bootstrap.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/bootstrap-material-design/dist/js/material.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/bootstrap-material-design/dist/js/ripples.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/moment/moment.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/reconnectingWebsocket/reconnecting-websocket.js" %}'></script>
+    <script type="text/javascript" src='{% static "bower_components/angular/angular.js" %}'></script>
+
+    <script type="text/javascript" src='{% static "app.module.js" %}'></script>
+
+    {% block afterbody %}
+    {% endblock afterbody %}
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "django-channels",
+  "description": "",
+  "main": "app.module.js",
+  "authors": [
+    "Christopher Paul <christopherp@mindfiresolutions.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/chrisindark/django-channels",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "bootstrap": "^3.3.6",
+    "bootstrap-material-datetimepicker": "^2.7.1",
+    "bootstrap-material-design": "^0.5.10",
+    "angular": "^1.6.1",
+    "moment": "^2.18.1",
+    "reconnectingWebsocket": "^1.0.0"
+  },
+  "resolutions": {
+    "bootstrap-material-design": "^0.5.10"
+  }
+}

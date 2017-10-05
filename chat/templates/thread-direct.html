@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}{{ thread.title }}{% endblock %}
+{% block header_text %}{{ thread.title }}{% endblock %}
+
+{% block content %}
+
+    <div ng-app="djangochannels">
+        <div class="" ng-controller="MainController as vm">
+            <div class="message-container">
+
+                <message-component></message-component>
+
+            </div>
+        </div>
+    </div>
+
+<style type="text/css">
+
+    .my-user-item {
+        display: block;
+    }
+
+    .my-user-item:hover {
+        cursor: pointer;
+    }
+
+    .my-user-username {
+        padding-left: 10px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        text-decoration: none !important;
+    }
+
+    .my-user-options {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        right: 10px;
+        float: right;
+    }
+
+
+    .my-user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background-color: teal;
+    }
+
+    .my-user-date {
+        padding-top: 5px;
+        padding-left: 10px;
+        text-decoration: none;
+        display: inline-block;
+        color: teal;
+    }
+
+    .my-content-header {
+        padding: 5px 0 15px;
+        border-bottom: 1px solid teal;
+    }
+
+    .my-content-body {
+        padding: 20px 10px;
+    }
+
+    .my-content-footer {
+        padding: 20px 10px;
+    }
+
+</style>
+
+
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Django Channels Example</h1>
+    <p class="deck">
+        This is a demo using <a href="http://channels.readthedocs.org/en/latest/">
+        Django Channels</a> to implement a simple WebSocket-based chat server.
+    </p>
+    <p>
+        <a class="button button-primary" href="{% url 'new_room' %}">Create new chat room</a>
+    </p>
+{% endblock content %}

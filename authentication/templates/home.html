@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Welcome, {{ request.user.username }}!</h2>
+
+    <hr>
+
+    {% for user in users %}
+        <p>
+            <a href="{% url 'thread_direct' username=user.username %}">{{ user.username }}</a>
+        </p>
+    {% endfor %}
+
+{% endblock %}
