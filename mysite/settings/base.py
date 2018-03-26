@@ -1,6 +1,5 @@
 import os
 from django.core.exceptions import ImproperlyConfigured
-# import dj_database_url
 from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -90,8 +89,8 @@ MEDIA_URL = '/media/'
 MEDIA_PATH = 'media/'
 STATIC_PATH = 'static/'
 
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, STATIC_PATH))
-MEDIA_ROOT = os.path.abspath(os.path.join(BASE_DIR, MEDIA_PATH))
+STATIC_ROOT = os.path.abspath(os.path.join(PROJECT_PATH, STATIC_PATH))
+MEDIA_ROOT = os.path.abspath(os.path.join(PROJECT_PATH, MEDIA_PATH))
 
 STATICFILES_DIRS = []
 
@@ -143,3 +142,5 @@ def read_env():
 
 # load environment variables from .env file
 read_env()
+
+DATABASES = {}
