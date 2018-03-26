@@ -5,7 +5,8 @@ import dj_database_url
 SECRET_KEY = get_env_var('SECRET_KEY', 'secret')
 
 ALLOWED_HOSTS = [
-    u'protected-bastion-26995.herokuapp.com'
+    u'protected-bastion-26995.herokuapp.com',
+    'protected-bastion-26995.herokuapp.com',
 ]
 
 DEBUG = True
