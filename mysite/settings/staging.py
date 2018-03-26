@@ -64,15 +64,16 @@ CSRF_COOKIE_SECURE = True
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-REDIS_HOST = 'localhost'
-REDIS_PORT = 6379
+# REDIS_HOST = 'localhost'
+# REDIS_PORT = 6379
+REDIS_URL = 'redis://h:pf9130143644aa6f838abd1315f344d2e7f00f202e2dc453243f2162d86a8e055@ec2-35-171-227-50.compute-1.amazonaws.com:6489'
 
 # Channel settings
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "asgi_redis.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [(REDIS_HOST, REDIS_PORT)],
+            "hosts": [REDIS_URL],
         },
         "ROUTING": "mysite.routing.channel_routing",
     },
