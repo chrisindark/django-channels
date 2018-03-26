@@ -60,17 +60,6 @@ INSTALLED_APPS += (
 
 MIDDLEWARE += ()
 
-DATABASES = {}
-
-DATABASES['default'] = {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': get_env_var('DB_NAME'),
-    'USER': get_env_var('DB_USERNAME'),
-    'PASSWORD': get_env_var('DB_PASSWORD'),
-    'HOST': get_env_var('DB_HOST'),
-    'PORT': get_env_var('DB_PORT'),
-}
-
 CORS_ORIGIN_WHITELIST = ()
 CORS_ORIGIN_ALLOW_ALL = True
 
