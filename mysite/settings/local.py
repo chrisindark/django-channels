@@ -5,13 +5,13 @@ from mysite.settings.base import *
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_env_var('SECRET_KEY', 'secret')
 
-ALLOWED_HOSTS = (
+ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '172.16.9.234',
     '192.168.1.104',
-    'protected-bastion-26995.herokuapp.com',
-)
+    u'protected-bastion-26995.herokuapp.com',
+]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
