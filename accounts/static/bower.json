@@ -25,6 +25,7 @@
     "reconnectingWebsocket": "^1.0.0"
   },
   "resolutions": {
-    "bootstrap-material-design": "^0.5.10"
+    "bootstrap-material-design": "^0.5.10",
+    "jquery": "^2.1.4"
   }
 }

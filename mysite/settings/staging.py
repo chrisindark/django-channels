@@ -7,6 +7,7 @@ SECRET_KEY = get_env_var('SECRET_KEY', 'secret')
 ALLOWED_HOSTS = [
     u'protected-bastion-26995.herokuapp.com',
     'protected-bastion-26995.herokuapp.com',
+    '127.0.0.1',
 ]
 
 DEBUG = True
@@ -67,7 +68,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # REDIS_HOST = 'localhost'
 # REDIS_PORT = 6379
-REDIS_URL = 'redis://h:pf9130143644aa6f838abd1315f344d2e7f00f202e2dc453243f2162d86a8e055@ec2-35-171-227-50.compute-1.amazonaws.com:6489'
+REDIS_URL = 'redis://h:pf9130143644aa6f838abd1315f344d2e7f00f202e2dc453243f2162d86a8e055@ec2-18-204-120-6.compute-1.amazonaws.com:7839'
 
 # Channel settings
 CHANNEL_LAYERS = {
